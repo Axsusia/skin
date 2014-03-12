@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* 태그정의 */
+body {background-color:#eee;}
+/* 공용 */
+.boxStyle1 {
+	color:#222;
+	border:0px;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px
+}
+
+/* 정보숨김 */
+#locator {display:none}
+.infoBox {display:none}
+.another_category {display:none}
+#footer {display:none}
+.adBox {display:none}
+.entry-ccl {display:none}
+.trackback {display:none}
+
+
+#container {width:500px;margin-bottom:6px}
+
+/* 스킨 영역 설정 */
+.left-area {/* width:100%; */overflow: hidden;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
+
+/* 본문 */
+#article a {color: #000;}
+#article a:hover {color: #5da0cf;}
+
+/* 아티클 */
+#content {
+	background-color:#fff;
+}
+
+/* 댓글영역 */
+.op {display:none}
+
+.cmt-area input{
+	color: #999;
+	width: 130px;
+	background-color: #ddd;
+	border-bottom: 1px dotted #222;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	margin-right: 12px;
+	font-size: 11px;
+	height: 18px;
+}
+
+.cmt-input {width: 368px}
+
+.cmt-reply-box {overflow: hidden;margin-top: 0px;font-size: 13px;line-height: 170%;border-bottom: 0px}
+.user-cmt {width: 379px;float: left;padding: 0px 10px 0px 20px;margin-left: 1px}
+.user-img {
+	margin-bottom:0px;
+	background: url(http://cfs.tistory.com/custom/blog/39/399067/skin/images/guest.jpg);
+}
+
+.cmt-area ol {margin-top: 0px;padding: 20px;background-color: #fff;}
+.cmt-area>ol>li {margin-bottom: 20px;padding-bottom:20px;border-bottom: 1px solid #ccc;}
+.cmt-area>ol>li:last-child {border-bottom: 0px;padding-bottom:0px}
+
+.cmt-reply-as-box {margin-top:10px;background-color: #eee;padding: 10px;border: 1px solid #ddd;}
+.user-as-info {float: left}
+.user-as-img {
+	float: left;width:40px;height:40px;
+	background: url(http://cfs.tistory.com/custom/blog/39/399067/skin/images/guest.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-khtml-background-size:cover; 
+	background-size:cover
+}
+.user-as-img img {width:40px;height:40px}
+.user-as-cmt {width: 309px;float: left;padding: 0px 0px 0px 10px;}
+
+/* 코멘트 */
+	.user-cmt {padding:0 0 0 20px}
+
+/* 댓글부 */
+.cmt-area {border-bottom: 1px solid #ccc}
+.cmt-area > ol {border-top:1px solid #ccc}
+	
+/* 페이징 */
+.paging {width: 100%;padding: 20px 0 20px 0;text-align: center;display: inline-block;background-color: #fff;border-bottom: 1px solid #ccc}
+.paging span a {
+	background: #eee;
+	color: #999;
+}
+.paging span a {
+	text-decoration:none;
+	text-align:center;
+	padding:5px 9px 5px 9px;
+	border: 1px solid #ccc;
+	font:normal 12px Malgun Gothic;
+	display:inline-block;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.paging span .selected {text-decoration:none;text-align:center;font:bold 12px Malgun Gothic;color:#ccc;display:inline-block;font-weight: normal}
+.paging span a:hover {border:1px solid #dedede;background-color: #ccc;color: #fff;}
+
+/* 퀵바 */
+.q-bar {width: 85px;height: 400px;margin-left: 6px;float: left;position:absolute; right:0;top:0} /*position: absolute;*/
+
+/* 트랙백 */
+.trackback {margin:0px;padding: 10px 0 10px 0;width: 100%-2px;/* overflow: hidden; */text-align: center;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+
+/* 푸터 */
+#footer {
+	color:#777;
+	background-color: #FFF;
+	width: 1068px;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	margin: auto;
+	margin-bottom: 40px;
+	border-top:0px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+/* 로케이터 */
+#locator {color: #ddd}
+#locator a {color: #444;float:left}
+#locator a:hover {font-weight: bold;color: #000}
+
+/* 아티클 */
+#content {
+	width:100%-42px;
+	padding: 40px 40px 40px 40px;
+	margin-bottom: 0px; 
+	overflow: hidden;
+	border:0px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
+/* 코맨트 더보기 */
+.tt_more_preview_comments_wrap {
+	margin-top: 0px;
+	color:#999;
+	background-color: #eee;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	margin: auto;
+	border: 1px solid #ccc;
+	padding: 10px
+}
+
+.cmt-area>ol>li.tt_more_preview_comments_wrap {padding:10px}

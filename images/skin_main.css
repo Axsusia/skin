@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* 태그정의 */
+ul {list-style: none;}
+/*
+http://cfile2.uf.tistory.com/image/1716080949D944F84D883C
+http://wallpaper.dbgo.com/dbgodata/file/window/597974469_fd89d8d3_Val%2Bdi%2BFunes2C%2BDolomites2C%2BItaly.jpg
+http://cfile5.uf.tistory.com/original/112E1D1F4BB374A24B413E
+http://cfile25.uf.tistory.com/original/182C39204BB3735A1BAA26
+http://toria.tv/data/file/back/554934424_9gkLfJAq_EBB0B0EAB2BDED9994EBA9B41.jpg
+http://screensaver.pe.kr/view/data/category_8/screensaver_pe_kr_wallpapers_586.jpg
+http://cfile5.uf.tistory.com/image/110458375017F84A01ED55
+http://cfile26.uf.tistory.com/image/1342634A4E968BC030C2C2
+http://tpholic.com/xe/files/attach/images/76/993/785/001/F2-1.jpg
+http://cfile24.uf.tistory.com/image/1520FC594D64C35116666F
+*/
+
+.thBox a {color:#fff;text-decoration:none;font-size:11px}
+.thBox  ul {clear:both}
+.thBox > ul > li:last-child {margin-right: 0px}
+.thBox > ul > li {
+	width: 200px;line-height:12px;
+	margin-right: 30px;float: left;padding: 10px;
+	color: #fff;
+	border: 1px solid #181818;
+	background-color: rgba(0,0,0,0.5);
+	position:relative;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px
+}
+.thBox > ul li:hover {color:#000;background-color:rgba(255,255,255,0.5)}
+.thBox > ul li:hover > div a {color:#000}
+.thBox > ul > li:hover ul {display:block}
+.thBox > ul > li:hover div a {font-weight: bolder}
+.thBox > ul > li > ul {display:none;position:absolute;bottom:33px;left:-1px;}
+.thBox > ul > li > ul > li {
+	width: 200px;
+	line-height:12px;
+	font-size:11px;
+	margin-bottom:4px;
+	padding: 10px;
+	text-align: left;
+	color: #fff;border: 1px solid #181818;background-color: rgba(0,0,0,0.5);
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px
+}
+.thBox > ul > li > ul > li:hover a {color:#000}
+.thBox > ul > li > div {
+	text-align: center;
+	font-size:11px;
+}
+
+.iconBar {width:100%;height:50px;position:fixed;bottom:0px}
+.iconBar > div {
+	width:978px;
+	margin:0 auto;
+	height:50px;
+	border-top-left-radius: 4px;
+	-moz-border-top-left-radius: 4px;
+	-webkit-border-top-left-radius: 4px;	
+	border-top-right-radius: 4px;
+	-moz-border-top-right-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+}
+
+.category ul ul ul,
+.category ul ul li:hover,
+.category ul ul ul li:hover {
+	/*background: rgba(255,255,255,0.7)*/
+}
+
+#mainBox {margin:0 auto;width:500px;174px;color:rgba(255,255,255,0.7);text-align: center}
+#dpTime {font-family:Trebuchet MS;font-size:80px;letter-spacing:-3}
+.welcome {font-size:12px;font-family:Malgun Gothic;letter-spacing:-1}
+#mainBox .blogTitle {font-size:50px;font-family:Times New Roman}
+
+#locator {display:none}
+footer {display:none}
+.btnTop {display:none}
+
+.q-bar {display: none} /*position: absolute;*/
+
+/* 인터넷 익스플로러 7 */
+.ieLow .thBox > ul > li > ul > li,
+.ieLow .thBox > ul > li,
+.ieLow .dtlBox3,
+.ieLow .dtlBox4,
+.ieLow .topNav,
+.ieLow .top-menu
+{
+	background: url(http://cfs.tistory.com/custom/blog/39/399067/skin/images/bg_black_50.png);
+}
+.ieLow .thBox > div:hover,
+.ieLow .thBox > ul li:hover
+{background: url(http://cfs.tistory.com/custom/blog/39/399067/skin/images/bg_white_50.png);}
+.ieLow .top-area {border:0px}
+.ieLow .thBox > ul > li > ul > li,
+.ieLow .thBox > ul > li
+{width:200px}
+.ieLow #mainBox {color:#fff;filter:alpha(opacity=70);font-family:Times New Roman}

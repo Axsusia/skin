@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* 태그정의 */
+body {background-color:#eee;}
+/* 공용 */
+.boxStyle1 {
+	background-color:#ddd;
+	color:#222;
+}
+
+/* 스킨 영역 설정 */
+.left-area {width:100%;overflow: hidden;}
+
+/* 본문 */
+#article a {color: #000;}
+#article a:hover {color: #5da0cf;}
+
+/* 아티클 */
+#content {
+	background-color:#fff;
+}
+
+/* 댓글영역 */
+.cmt-area input{
+	color: #999;
+	width: 130px;
+	background-color: #ddd;
+	border-bottom: 1px dotted #222;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	margin-right: 12px;
+	font-size: 11px;
+	height: 18px;
+}
+
+/* 코멘트 */
+		.cmt-input {width: 936px}
+
+	.user-cmt {width: 894px}
+	.user-as-cmt {width: 894px}
+	
+/* 페이징 */
+.paging span a {
+	background:#ccc;
+	color:#555;
+}
+
+/* 퀵바 */
+.q-bar {width: 85px;height: 400px;margin-left: 6px;float: left;position:absolute; right:0;top:0} /*position: absolute;*/
+
+/* 푸터 */
+#footer {
+	color:#777;
+	background-color:#eee;
+}
+
+/* 로케이터 */
+#locator {color: #ddd}
+#locator a {color: #444;float:left}
+#locator a:hover {font-weight: bold;color: #000}
+
+/* ad-content-top 영역 히든 */
+.ad-area {display: none}
+.ad-content-top {display: none;}

@@ -1,0 +1,404 @@
+@charset "utf-8";
+/************************************************************************/
+/* 시멘틱웹css															*/
+header, section, footer, aside, nav, article, figure
+{display: block}
+/************************************************************************/
+/* 기본 셋팅															*/
+* {margin:0px;padding:0px}
+a {text-decoration:none}
+a:hover {font-weight:bolder}
+img {border:0px}
+ul,ol,li,dt,dd,dl {list-style:none}
+body {font-size:14px;font-family:"맑은 고딕","Malgun Gothic","돋움",dotum,"Georgia Pro",Arial;background-color:#333}
+body {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-khtml-background-size:cover; 
+	background-size:cover
+}
+/************************************************************************/
+/* 전체 화면 최소 너비													*/
+#wrap {min-width:1150px}
+/************************************************************************/
+/* 그리드 정보 															*/
+.item {display: block;}
+
+.grid {display: block;clear: both;overflow: hidden;position: relative;}
+[class*='col-'] {
+	float: left;
+	padding-left: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*.grid:after {display: table;}*/
+[class*='col-']:first-child {margin-left: 0px;padding-left: 0px}
+/*[class*='col-']:last-of-type {padding-right: 0px}*/
+/*[class*='cell-'] {}*/
+
+.col-1 {width: 100%}
+.col-2 {width: 50.000000000%}
+.col-3 {width: 33.3333332%}
+.col-4 {width: 25.000000000%}
+.col-5 {width: 20.000000000%}
+.col-6 {width: 16.6666665%}
+
+.col-1-3 {width: 33.3333332%}
+.col-2-3 {width: 66.6666665%}
+
+.col-1-4 {width: 25%}
+.col-2-4 {width: 50%}
+.col-3-4 {width: 75%}
+
+.col-1-5 {width: 20%}
+.col-2-5 {width: 40%}
+.col-3-5 {width: 60%}
+.col-4-5 {width: 80%}
+
+.rel {position: relative;}
+.abs {position: absolute;}
+
+[class*='pd-'] {padding:0px;}
+.pd-10 {padding: 10px;}
+.pd-20 {padding: 20px:}
+.pd-30 {padding: 30px;}
+
+[class*='mg-'] {margin:0px;}
+.mg-10 {margin: 10px;}
+.mg-20 {margin: 20px;}
+.mg-30 {margin: 30px;}
+
+.word-break {
+	text-align: justify;
+	word-break: keep-all;
+	word-wrap: break-word;
+}
+
+.background-center {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-khtml-background-size:cover; 
+	background-size:cover
+}
+
+.border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.border-content {
+	-webkit-box-sizing: border-content;
+	-moz-box-sizing: border-content;
+	box-sizing: border-content;
+}
+
+/************************************************************************/
+/* 컨테이너	통일 사이즈													*/
+[class*='container'] {margin:0 auto;clear:both;}
+.container {width:1100px;}
+.container-800 {width: 800px}
+.container-900 {width: 900px}
+.container-1000 {width: 1000px}
+.container-1200 {width: 1200px}
+
+.container-100p {width: 100%}
+.container-90p {width: 90%}
+.container-80p {width: 80%}
+.container-70p {width: 70%}
+
+/************************************************************************/
+/* 공통 class																*/
+.blogTitle {font-family: Georgia;font-weight: bolder}
+/************************************************************************/
+/* 상단헤터																*/
+.topNav {width:100%;height:50px;position:relative;top:0px;background:#333;border-bottom:4px solid #d92323;z-index:999}
+.topNav a {color:#fff}
+.topNav .container {position:relative}
+.topNav .blogTitle {float:right;margin-top:9px;margin-right:10px}
+.topNav .blogLink {position:absolute;top:14px;left:840px;font-size:11px;background:#fff;border:1px solid #000;}
+.topNav .blogLink a {display:block;padding:3px;color:#000 !important;}
+/************************************************************************/
+/* 카테고리																*/
+.category {float:left}
+.category > ul {float:left}
+.category > ul > li > a {display:none}
+.category > ul > li > ul > li {position:relative;float:left;}
+.category > ul > li > ul > li > a {display:block;padding:0px 15px;line-height: 50px;border-bottom: 0px solid #ccc;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.category ul ul {font-size: 12px;font-weight:bolder}
+
+.category ul ul ul {
+	width:200px;display:none;position:absolute;top:50px;left:-1px;background:#555;padding:5px;
+	border-left:1px solid #333;
+	border-right:1px solid #333;
+	border-bottom:1px solid #333;
+}
+.category ul ul ul li {position:relative}
+.category ul ul ul li a {display:block;width:180px;padding:10px 10px}
+.category ul ul ul li a:hover {background:#666}
+.category ul ul li:hover {background:#555}
+.category ul ul li:hover ul {display:block}
+/************************************************************************/
+/* 카테고리 정보 div													*/
+.cateInfo {width:100%;height:0px;}
+/************************************************************************/
+/* 네비게이션															*/
+.linkedNav {font-size:11px;background:#eee;border-top: 2px solid #ccc}
+.navigation {padding-left: 10px;}
+.navigation ul {height:30px;overflow:hidden}
+.navigation ul li {float:left;line-height:30px;margin-right:5px}
+.navigation ul li span {display:inline-block;padding-top:4px}
+.navigation a,
+.navigation a:hover
+{color:#666}
+/************************************************************************/
+/* 메인컨텐츠															*/
+#main {background:#eee}
+#main .container {background:#fff;border:1px solid #ccc;overflow:hidden}
+#main .container a {color:#222}
+#main .container a:hover {color:#d92323}
+
+.content {min-height:500px}
+
+.articleBox {padding:30px}
+.articleBox header {margin-bottom:30px}
+.articleInfo {color:#aaa;margin-top:10px;padding-top:10px;border-top:1px solid #ddd}
+.articleInfo a {color:#aaa}
+/************************************************************************/
+/* 본문																	*/
+article {
+	margin-bottom:20px;
+	text-align: justify;
+	line-height: 190%;
+	word-break: keep-all;
+	word-wrap: break-word;
+}
+article a {color:#d92323 !important;border-bottom:1px dotted #d92323;}
+article a:hover {border-bottom:1px solid #d92323;}
+article > div > h3 {font-size:1.4em;padding:0 0 2px 10px;margin-bottom:4px;line-height:35px;color:#fff;background:#aaa;border-bottom:2px solid #777}
+article > div > h4 {font-size:16px;padding-left:10px;margin-bottom:5px;border-left:5px solid #666;border-bottom:1px solid #999}
+article ul li {list-style:disc;line-height:26px;margin-left:30px}
+/************************************************************************/
+/* 사이드바																*/
+.sideBar {display:none}
+.subCategory {padding:30px 20px 20px 20px}
+.subCategory li {line-height:40px;padding-left:10px;border-top:1px solid #ccc}
+.subCategory li:first-child {border-top:0px}
+/************************************************************************/
+/* 리스트 화면															*/
+.articleList ol li {list-style:disc;line-height:35px;color:#aaa;margin-left:30px}
+.articleList ol li a {margin-left:10px}
+/************************************************************************/
+/* 코멘트부분															*/
+.commentWrite .title {display: block;float:left;}
+.commentWrite .commentTextarea textarea {width:100%;height:110px;border:0px;padding:5px;box-sizing:border-box;}
+.commentWrite .commentInputBox {padding-left:150px;padding-right:20px}
+
+.commentWrite .commentInputBox .commentInput {overflow:hidden;margin-bottom:10px}
+
+.commentWrite .commentInputBox .commentInput .id input,
+.commentWrite .commentInputBox .commentInput .pass input,
+.commentWrite .commentInputBox .commentInput .site input
+{
+	width:100px;height:19px;padding:5px;margin-right:12px;
+}
+.commentWrite .commentInputBox .commentInput .ck {line-height:31px}
+.commentWrite .commentInputBox div span {float:left}
+.commentWrite .commentInputBox div span.btn {float:right}
+.commentWrite .commentInputBox div span.btn a {width:90px;text-align:center}
+
+.input_basic{
+	background:#eee;
+	border:1px solid #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+	text-shadow: 0 1px 0 rgba( 255, 255, 255, 0.45 );
+}
+
+.commentList {line-height:165%}
+.commentList li > div > div,
+.commentList li li > div > div
+{float:left}
+.commentList ol {overflow:hidden;list-style:decimal-leading-zero}
+.commentList > ol > li {list-style:decimal-leading-zero;border-left:1px solid #ddd;padding:1px 20px 20px 0;margin:30px 0 0 30px;}
+.commentList > ol > li:hover {background:#FaFaFa;border-left:1px solid #bbb}
+.commentList > ol > li > ul {margin-left:110px;}
+
+.commentList .commentBox {clear:both;overflow:hidden;display:block;padding-left:110px}
+.commentList .commentBox .userImg {
+	width:60px;height:60px;
+	background-color:#eee;
+	margin-left:-80px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+}
+.commentList .commentBox .userImg a {font-size:0px;width:0px;height:0px;}
+.commentList .commentBox .userImg img {top:0px;left:0px;width:60px;height:60px;}
+.commentList .commentBox .cmt {display:block;margin-top:10px;}
+
+.commentList .commentRpBox {background:#F7F7F7;overflow:hidden;display:block;padding:15px 15px 15px 80px;margin-top:10px;border:1px solid #ddd}
+.commentList .commentRpBox:hover {background:#eee;border:1px solid #d92323}
+
+.commentList .commentRpBox .userImg {width:50px;height:50px;margin-left:-65px;}
+.commentList .commentRpBox .userImg a {font-size:0px;width:0px;height:0px;}
+.commentList .commentRpBox .userImg img {top:0px;left:0px;width:50px;height:50px;}
+
+.commentList .name {font-size:16px;font-weight:bolder}
+.commentList .data {font-size:13px;color:#aaa}
+.commentList .data a {color:#aaa}
+
+.userImg{
+	overflow:hidden;
+	font-size:0px;
+	background: url(http://cfs.tistory.com/custom/blog/39/399067/skin/images/guest.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-khtml-background-size:cover; 
+	background-size:cover
+}
+.userImg span,
+.userInfo .name img 
+{width:0px;height:0px;display:none}
+
+.data a,
+.data a:hover
+{color:#aaa !important}
+
+.cmt {word-wrap:break-word;text-align:justify}
+/************************************************************************/
+/* 태그																	*/
+section.tag {padding:10px;margin-bottom:20px;border:1px solid #ddd}
+section.tag span {font-weight:bolder}
+/************************************************************************/
+/* 추가 정보																*/
+section.addInfo {background: #eee; padding-top: 40px;padding-bottom: 40px}
+section.addInfo h2 {
+	margin-bottom: 10px;
+	color:#d92323;
+	font-size: 15px;
+	font-weight: bolder;
+}
+section.addInfo .grid div > div {
+	border: 1px solid #ccc;
+	padding:20px;
+	background: #fff;
+	margin-left: 0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+/*section.addInfo .grid [class*='col-']:first-child {margin-left: 0px}*/
+section.addInfo .grid div > div li {
+	line-height: 30px;
+	border-top: 1px dotted #ccc;
+	font-size: 13px;
+} 
+section.addInfo .grid div > div li:first-child {border-top: 0px}
+.blogger span {display: block;word-break: keep-all;word-wrap: break-word;text-align: justify;line-height: 160%;}
+/************************************************************************/
+/* 페이징																	*/
+.paging {padding:20px 0;text-align:center;border-top:1px solid #ccc}
+.paging span a {background: #eee;}
+.paging span a {
+	text-decoration:none;
+	text-align:center;
+	padding:5px 9px 5px 9px;
+	border: 1px solid #ccc;
+	font:normal 12px Malgun Gothic;
+	display:inline-block;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.paging span a:hover {color: #d92323;font-weight: bold;border: 1px solid #d92323}
+.paging span .selected {display:inline-block;color: #d92323;font-weight: bold}
+.paging span .selected a {border: 1px solid #d92323}
+/************************************************************************/
+/* 푸터																	*/
+footer {color:#fff;background:#333;border-top:0px solid #d92323}
+footer div div {padding:50px 0}
+/************************************************************************/
+/* 티스토리 기본 영역 숨김												*/
+#tistorytoolbarid {display:none}
+/************************************************************************/
+/* 로딩																	*/
+.loading {width: 100px;margin:0 auto;padding-top: 300px}
+/************************************************************************/
+/* 히든																	*/
+.hidden_area {position: fixed;top:0px;left:-300px;width: 300px;height: 100%;z-index:9999;border-right: 1px solid #222;color:#999}
+.hidden_area a {color:#999}
+.hidden_area a:hover {color:#fff}
+.hidden_area .btn {position: absolute;left: 300px;top:150px;width:29px;height:55px}
+.hidden_area .btn span img {cursor:pointer}
+.hidden_area .btn span {width:29px;height:55px}
+.hidden_area .mCSB {height: 100%;background-image: url(http://cfs.tistory.com/custom/blog/39/399067/skin/images/hidden_bg.png)}
+.hidden_area .inner {padding: 0px 17px 0px 10px;height: 100%}
+.hidden_area .inner > dl {margin-top:15px}
+.hidden_area .inner dt {color:#fff;line-height: 30px;font-size: 15px;font-weight: bolder}
+.hidden_area .inner dd {line-height: 24px;font-size:13px}
+
+.hidden_area .blog_dtl {font-size: 12px;font-family: 굴림;color:#fff;}
+.hidden_area .blog_title {font-size: 30px;color: #5da0cf;font-family:Georgia}
+
+.hidden_area .crt_cmt_info {font-size:11px;color:#777}
+/************************************************************************/
+/* 광고																	*/
+.adBox {width:732px;height: 280px;overflow: hidden;margin: 0 auto;padding-bottom: 20px;display: block}
+.ad {width: 336px;height: 280px}
+.ad1, .ad2 {float: left;margin-right: 0px}
+.ad2 {margin-left: 60px}
+.ad3 {padding-bottom:20px}
+/************************************************************************/
+/* 기타																	*/
+.another_category.another_category_color_gray {line-height: 130%;margin-bottom: 0px;}
+/************************************************************************/
+/* 페이스북																*/
+.fb-comments {width:100% !important}.fb-comments > span {width:100%  !important}.fb-comments > span > iframe {width:100%  !important}
+/************************************************************************/
+/* 버튼																	*/
+.btnTop {width:37px;height:37px;position:fixed;right:20px;bottom:20px}
+.btnTop a {width:37px;height:37px;display:inline-block;background:url(http://cfs.tistory.com/custom/blog/39/399067/skin/images/btn_top.png)}
+/************************************************************************/
+/* 테이블																*/
+.tb1 table {
+	border-collapse: collapse;
+	border: 1px solid #666666;
+	color: #363636;
+	background: #f6f6f6;
+	text-align:left;
+}
+.tb1 caption {
+	text-align: center;
+	font: bold 16px arial, helvetica, sans-serif;
+	background: transparent;
+	padding:6px 4px 8px 0px;
+	color: #CC00FF;
+	text-transform: uppercase;
+}
+.tb1 thead th, tfoot th {padding:5px}
+.tb1 tr:nth-child(odd){background:#f1f1f1}
+.tb1 table a {
+	color: #333333;
+	text-decoration:none;
+}
+.tb1 table a:hover {text-decoration:underline}
+.tb1 tbody th, tbody td {padding:5px}

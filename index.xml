@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>Axsusia</name>
+		<version>1.0</version>
+		<description>
+			<![CDATA[ 사용금지! ]]>
+		</description>
+		<license>
+			<![CDATA[ 원저작자 및 리퀘스트 요청자의 허가 없이는 무단으로 사용 및 재배포 할 수 없습니다.]]>
+		</license>
+		<tags>
+			<tag>persenel skin</tag>
+		</tags>
+	</information>
+	<author>
+		<name>엑수시아</name>
+		<homepage>http://zion437.tistory.com</homepage>
+		<email>zion437@tistory.com</email>
+	</author>
+	<default>
+		<recentEntries>10</recentEntries>
+		<recentComments>15</recentComments>
+		<recentTrackbacks>0</recentTrackbacks>
+		<itemsOnGuestbook>10</itemsOnGuestbook>
+		<tagsInCloud>0</tagsInCloud>
+		<sortInCloud>3</sortInCloud>
+		<expandComment>1</expandComment>
+		<expandTrackback>0</expandTrackback>
+		<lengthOfRecentNotice>28</lengthOfRecentNotice>
+		<lengthOfRecentEntry>28</lengthOfRecentEntry>
+		<lengthOfRecentComment>28</lengthOfRecentComment>
+		<lengthOfRecentTrackback>0</lengthOfRecentTrackback>
+		<lengthOfLink>30</lengthOfLink>
+		<showListOnCategory>1</showListOnCategory>
+		<showListOnArchive>1</showListOnArchive>
+		<trackbackMessage>
+			<none>Trackback : 0</none>
+			<single>Trackback :&lt;span class="tbCount"&gt; 1&lt;/span&gt;</single>
+		</trackbackMessage>
+		<commentMessage>
+			<none>Comment : 0</none>
+			<single>Comment :&lt;span class="comCount"&gt; 1&lt;/span&gt;</single>
+		</commentMessage>
+		<tree>
+			<color>000000</color>
+			<bgColor>transparent</bgColor>
+			<activeColor>000000</activeColor>
+			<activeBgColor>transparent</activeBgColor>
+			<labelLength>27</labelLength>
+			<showValue>1</showValue>
+		</tree>
+		<contentWidth>680</contentWidth>
+		<layout>2</layout>
+		<toolbar>white</toolbar>
+	</default>
+</skin>

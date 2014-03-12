@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* 태그정의 */
+body {background-color:#eee;}
+/* 공용 */
+.boxStyle1 {
+	color:#222;
+	border:0px;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px
+}
+
+/* 스킨 영역 설정 */
+.left-area {/* width:100%; */overflow: hidden;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
+
+/* 본문 */
+#article a {color: #000;}
+#article a:hover {color: #5da0cf;}
+
+/* 아티클 */
+#content {
+	background-color:#fff;
+}
+
+/* 댓글영역 */
+.op {display:none}
+
+.cmt-area input{
+	color: #999;
+	width: 130px;
+	background-color: #ddd;
+	border-bottom: 1px dotted #222;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	margin-right: 12px;
+	font-size: 11px;
+	height: 18px;
+}
+
+.cmt-input-box {border-bottom:1px solid #ccc}
+
+.cmt-reply-box {overflow: hidden;margin-top: 0px;font-size: 13px;line-height: 170%;border-bottom: 0px}
+.user-cmt {float: left;padding: 0px 10px 0px 20px;margin-left: 0px}
+.user-img {
+	margin-bottom:0px;
+	background: url(http://cfs.tistory.com/custom/blog/39/399067/skin/images/guest.jpg);
+	-webkit-border-radius: 58px;
+	-moz-border-radius: 58px;
+	border-radius: 58px;
+}
+
+.cmt-area ol {margin-top: 0px;padding: 20px;background-color: #fff;}
+.cmt-area>ol>li {margin-bottom:0px;padding:20px;border-top: 1px solid #ccc;}
+.cmt-area>ol>li:first-child {border-top: 0px}
+
+.cmt-reply-as-box {margin-top:10px;background-color: #f1f1f1;padding: 10px;border: 1px solid #ddd;}
+.user-as-info {float: left}
+.user-as-img {
+	float: left;width:40px;height:40px;
+	background: url(http://cfs.tistory.com/custom/blog/39/399067/skin/images/guest.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-khtml-background-size:cover; 
+	background-size:cover
+}
+.user-as-img img {width:40px;height:40px}
+.user-as-cmt {width:839px;float: left;padding: 0px 0px 0px 10px;}
+
+/* 코멘트 */
+	.cmt-input {width: 936px}
+	.user-cmt {width: 910px;padding:0 0 0 20px}
+	
+/* 페이징 */
+.paging {width: 100%;padding: 20px 0 20px 0;text-align: center;display: inline-block;background-color: #fff;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc}
+.paging span a {
+	background: #eee;
+	color: #999;
+}
+.paging span a {
+	text-decoration:none;
+	text-align:center;
+	padding:5px 9px 5px 9px;
+	border: 1px solid #ccc;
+	font:normal 12px Malgun Gothic;
+	display:inline-block;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.paging span .selected {text-decoration:none;text-align:center;font:bold 12px Malgun Gothic;color:#ccc;display:inline-block;font-weight: normal}
+.paging span a:hover {border:1px solid #dedede;background-color: #ccc;color: #fff;}
+
+/* 퀵바 */
+.q-bar {width: 85px;height: 400px;margin-left: 6px;float: left;position:absolute; right:0;top:0} /*position: absolute;*/
+
+/* 트랙백 */
+.trackback {margin:0px;padding: 10px 0 10px 0;width: 100%-2px;/* overflow: hidden; */text-align: center;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+
+/* 푸터 */
+#footer {
+	width: 1070px;
+	margin: auto;
+	margin-bottom: 40px;
+	border-top:0px;
+	border-left: 0px solid #ccc;
+	border-right: 0px solid #ccc;
+	border-bottom: 0px solid #ccc;
+	filter: alpha(opacity=70); /* internet explorer */   
+	-khtml-opacity: 0.7;      /* khtml, old safari */   
+	-moz-opacity: 0.7;       /* mozilla, netscape */   
+	opacity: 0.7;           /* fx, safari, opera */
+}
+#footer:hover {
+	filter: alpha(opacity=100); /* internet explorer */   
+	-khtml-opacity: 1;      /* khtml, old safari */   
+	-moz-opacity: 1;       /* mozilla, netscape */   
+	opacity: 1;           /* fx, safari, opera */
+}
+#footer p {
+	color:#444;
+	line-height: 150%;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.9)
+}
+.footer-inner {padding: 30px 30px 30px 0}
+.footerTitle {
+	font-family: Georgia;
+	font-size: 24px;
+	font-weight: bolder;
+	color: #555
+}
+
+/* 로케이터 */
+#locator {color: #ddd}
+#locator a {color: #444;float:left}
+#locator a:hover {font-weight: bold;color: #000}
+
+/* 아티클 */
+#content {
+	width:100%-42px;
+	padding: 40px 40px 40px 40px;
+	margin-bottom: 0px; 
+	overflow: hidden;
+	border:0px;
+	border-top:1px solid #ccc;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
+/* 코맨트 더보기 */
+.tt_more_preview_comments_wrap {
+	margin-top: 0px;
+	color:#999;
+	background-color: #eee;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	margin: auto;
+	border: 1px solid #ccc;
+	padding: 10px
+}
+
+.cmt-area>ol>li.tt_more_preview_comments_wrap {padding:10px}

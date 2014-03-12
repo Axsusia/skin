@@ -1,0 +1,10 @@
+@charset "utf-8";
+/************************************************************************/
+/* 너비 조절 */
+.content {width:800px;float:left;border-right:1px solid #ccc}
+.sideBar{width:299px;float:left;display:block}
+/************************************************************************/
+/* 상단타이틀 */
+.cateInfo {height:250px;background:#d92323;border-bottom:4px solid #d92323}
+.cateInfo .container {height:250px;background:url(http://cfs.tistory.com/custom/blog/39/399067/skin/images/sk_bg.jpg)}
+/************************************************************************/
