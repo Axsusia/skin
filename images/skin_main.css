@@ -14,6 +14,8 @@ http://tpholic.com/xe/files/attach/images/76/993/785/001/F2-1.jpg
 http://cfile24.uf.tistory.com/image/1520FC594D64C35116666F
 */
 
+.topNav {border-bottom:0px}
+
 .thBox a {color:#fff;text-decoration:none;font-size:11px}
 .thBox  ul {clear:both}
 .thBox > ul > li:last-child {margin-right: 0px}
