@@ -12,6 +12,8 @@ a:hover{color:#eee}
 .navigation a,
 .navigation a:hover
 {color:#999}
+
+.linkedNav {border-top: 2px solid #555}
 /************************************************************************/
 #main {margin-top:20px}
 #main .container {background:none;border:0px solid #ccc}
