@@ -102,9 +102,17 @@ body {
 
 /************************************************************************/
 /* style 공통																*/
-.cmd {
+.cmd:before {
+	content: " : COMMEND INPUT";
+	display: inline-block;
+	width:160px;
+	padding: 0px 6px;
+	background:#000;
+	color:red;
+}
+.cmd > p{
 	display: block;
-	padding: 3px 6px;
+	padding: 4px 6px;
 	color: #fff;
 	background: #000;
 	font-family: dotum;
@@ -149,7 +157,8 @@ body {
 	box-sizing: border-box;
 }
 
-.category ul ul {font-size: 12px;font-weight:bolder}
+.category ul ul {font-size: 12px;font-family: '굴림'}
+.category ul ul a:hover {font-weight: normal;}
 
 .category ul ul ul {
 	width:200px;display:none;position:absolute;top:50px;left:-1px;background:#555;padding:5px;
