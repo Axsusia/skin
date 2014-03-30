@@ -21,7 +21,7 @@ body {
 	background-size:cover
 }
 /************************************************************************/
-/* 전체 화면 최소 너비													*/
+/* 전체 화면 최소 너비														*/
 #wrap {min-width:1150px}
 /************************************************************************/
 /* 그리드 정보 															*/
@@ -103,14 +103,14 @@ body {
 /************************************************************************/
 /* style 공통																*/
 .cmd:before {
-	content: " : COMMEND INPUT";
+	content: " : CMD";
 	display: inline-block;
 	width:160px;
 	padding: 0px 6px;
 	background:#000;
 	color:red;
 }
-.cmd > p{
+.cmd > p {
 	display: block;
 	padding: 4px 6px;
 	color: #fff;
