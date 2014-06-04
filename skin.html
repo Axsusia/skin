@@ -1,10 +1,24 @@
 <!DOCTYPE HTML>
-<!--[if lte IE 8]>
-<html lang="ko" class="ieLow">
+<!--[if IE 7]>
+<html lang="ko" class="ieLow ie7">
 <![endif]-->
-<!--[if gt IE 8]>
-<html lang="ko">
+
+<!--[if IE 8]>
+<html lang="ko" class="ie8">
 <![endif]-->
+
+<!--[if IE 9]>
+<html lang="ko" class="ie9">
+<![endif]-->
+
+<!--[if IE 10]>
+<html lang="ko" class="ie10">
+<![endif]-->
+
+<!--[if IE 11]>
+<html lang="ko" class="ie11">
+<![endif]-->
+
 <!--[if !IE]><-->
 <html lang="ko">
 <!--><![endif]-->
@@ -31,8 +45,6 @@
 	귀하가 사용하고 계신 브라우저는 HTML5를 지원하고 있지 않아서, 할 수 없이 JScript를 써서 몇몇 요소가 제대로 보이도록 구현했습니다.
 	그런데 안타깝게도 귀하의 브라우저에선 스크리트 기능이 꺼져있습니다. 이 페이지가 제대로 표시되려면 스크립트 기능을 켜주셔야만 합니다.
 </noscript>
-<![endif]-->
-<!--[if lt IE 9]>
 <![endif]-->
 <link href="./images/skin_common.css" type="text/css" rel="stylesheet" />
 <link href="./images/buttons.css"  type="text/css" rel="stylesheet" />
@@ -91,7 +103,7 @@
 		js : '',
 		menu : 'N'
 	});
-	 //온로드실행 및 스킨판별
+	//온로드실행 및 스킨판별
 	$(document).ready(function() {
 		//if(deviceType == 'P'){
 		//히든영역 토글
@@ -332,7 +344,8 @@ window.google_analytics_uacct = "UA-accountnumber-propertyindex";
 			<section class="articleBox">
 				<s_article_rep>
 				<header>
-					<h2 class="articleTitle">[##_article_rep_title_##]</h2>
+					<h2 class="articleTitle" app-key="category">[##_article_rep_title_##]</h2>
+					<script type="text/javascript"> // add for chose key value;;</script> <!-- must be here -->
 					<div class="articleInfo">
 						<span class="date">[[##_article_rep_date_##]]</span>
 						<span id="categoryName" class="categoryName">[##_article_rep_category_##]</span>
@@ -663,18 +676,18 @@ window.google_analytics_uacct = "UA-accountnumber-propertyindex";
 
 /* 스크롤바 처리 */
 //(function($){
-	$(window).load(function(){
-		$(".mCSB").mCustomScrollbar({
-			//set_width:'0px',
-			set_height:'100%',
-			scrollInertia:200,
-			scrollButtons:{ /*scroll buttons*/
-				enable:true, /*scroll buttons support: boolean*/
-				scrollSpeed:200, /*scroll buttons continuous scrolling speed: integer, "auto"*/
-				scrollAmount:40
-			}
-		});
+$(window).load(function(){
+	$(".mCSB").mCustomScrollbar({
+		//set_width:'0px',
+		set_height:'100%',
+		scrollInertia:200,
+		scrollButtons:{ /*scroll buttons*/
+			enable:true, /*scroll buttons support: boolean*/
+			scrollSpeed:200, /*scroll buttons continuous scrolling speed: integer, "auto"*/
+			scrollAmount:40
+		}
 	});
+});
 //})(jQuery);
 </script>
 <script type="text/javascript" src="./images/prettify.js"></script>
